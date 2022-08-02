@@ -1,9 +1,18 @@
 # Define the function to filter out the text
-# Commit 1
-# Commit 2
-def find(inp):
+
+def wordcounter(inp): 
+    spaces = 0
     for x in inp:
-        return x 
+        if " " in x:
+            spaces += 1
+    print(f"There are {spaces + 1} words in this sentence.")
+
+
+
+
 
 # Ask the user for input 
 userin = input("Input a string to be classified: ")
+
+# Take user input and add it as a parameter to the word counting function
+wordcounter(userin)
