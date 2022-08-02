@@ -1,6 +1,8 @@
 # Define the function to filter out the text
+# Commit 1
 def find(inp):
-    pass
+    for x in inp:
+        return x 
 
 # Ask the user for input 
 userin = input("Input a string to be classified: ")
