@@ -1,8 +1,8 @@
 # Define the function to filter out the text
 
+
 def wordcounter(inp,search): 
-    wordlist = []
-    spaces = 0
+    spaces = 0 # The variable to count all the words
     
     # Counting block
     for x in inp:
@@ -14,20 +14,15 @@ def wordcounter(inp,search):
     search_in_x = 0
     
     for x in inp:
-        if search in userin:
-           search_in_x += 1
-           wordlist.append(x)
+        if search in inp:
+            search_in_x += 1        
     
     print(f"{search} appears {search_in_x} times in the inputted string.")
-
-
+    print(type(search))
 
 
 # Ask the user for input 
 userin = input("Input a string to be classified: ")
-
-# Take user input and add it as a parameter to the word counting function
-wordcounter(userin)
 
 # Ask user for search word
 searchbool = input("Would you like to search for a word? ")
@@ -35,4 +30,5 @@ if searchbool == "yes" or "Yes":
     searchword = input("What word? ")
 else: print("Goodbye!")
 
-repeater(userin,searchword)
+# Take user input and add it as a parameter to the word counting function
+wordcounter(userin,searchword)
