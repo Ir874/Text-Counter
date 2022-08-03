@@ -7,6 +7,8 @@ def wordcounter(inp):
             spaces += 1
     print(f"There are {spaces + 1} words in this sentence.")
 
+def repeater(inp):
+    pass
 
 
 
