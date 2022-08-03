@@ -1,19 +1,23 @@
 # Define the function to filter out the text
 
-def wordcounter(inp): 
+def wordcounter(inp,search): 
+    wordlist = []
     spaces = 0
+    
+    # Counting block
     for x in inp:
         if " " in x:
             spaces += 1
     print(f"There are {spaces + 1} words in this sentence.")
-
-def repeater(inp,search):
+    
+    # Searching block
     search_in_x = 0
-    wordlist = []
+    
     for x in inp:
         if search in userin:
            search_in_x += 1
-        
+           wordlist.append(x)
+    
     print(f"{search} appears {search_in_x} times in the inputted string.")
 
 
